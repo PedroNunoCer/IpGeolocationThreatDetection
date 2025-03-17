@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link type="text/css" rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+<main class="container">
+  <form id="form">
+    <label>
+      IP del usuario
+    <input required pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$" id="input" type="text"
+    placeholder="Introduce aqui la IP">
+    <small>Por ejemplo: 45.85.125.205 </small>
+  </label>
+
+  <button type="submit" id="submit">
+    Buscar informacion de esta IP
+  </button>
+  </form>
+
+  <div>
+    <pre id="results">
+
+    </pre>
+  </div>
+</main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
